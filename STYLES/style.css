@@ -83,7 +83,7 @@ a {
 
 }
 
-.description {
+.descirption {
     color: #534C64;
 
 }
@@ -183,10 +183,18 @@ a {
     color: #0B0223;
 
 
-    font-size: 35px;
+    font-size: 2.1vw;
     /* font-style: normal; */
     font-weight: 700;
     /* line-height: normal; */
+}
+.funny-title1{
+    color: #FF42A5;
+
+
+    font-size: 2.2vw;
+    /* font-style: normal; */
+    font-weight: 700;
 }
 
 #two {
@@ -199,7 +207,7 @@ a {
 .description1 {
 
     color: #534C64;
-    font-size: 12px;
+    font-size: .9vw;
 }
 
 
@@ -212,7 +220,7 @@ a {
     display: flex;
     justify-content: space-between;
     gap: 14vw;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .content {
@@ -223,11 +231,11 @@ a {
 
 }
 
-.funny-title1 {
-    color: #F948B2;
+.funny-title {
+    color:black;
 
 
-    font-size: 35px;
+    font-size: 2.1vw;
     /* font-style: normal; */
     font-weight: 700;
 }
@@ -253,7 +261,7 @@ a {
 
 .description2 {
     color: #534C64;
-    font-size: 12px;
+    font-size: .9vw;
 }
 
 
@@ -304,7 +312,9 @@ a {
     border: 1px solid #FF42A5;
     color: #FF42A5;
 }
-
+.optimal{
+    display: none;
+}
 
 
 
@@ -320,10 +330,11 @@ footer{
     padding-bottom: 8vw;
     gap: 2.5vw;
 }
-.footer{
+.footer1,.footer2,.footer3,.footer,.footer4{
     display: flex;
     gap: 2vw;
 }
+
 .footer h4{
     font-size: 15px;
     font-weight: 400;
@@ -339,4 +350,132 @@ font-size: 10px;
 /* font-style: normal; */
 font-weight: 500;
 /* line-height: normal; */
+}
+
+@media screen and (max-width:576px) {
+    .navbar,.nav-menu{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: none;
+        gap: 3vw;
+    }
+    .navbar{
+        padding-top: 8vw;
+        padding-bottom: 5vw;
+        
+    }
+    .bannar{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        background-image: none;
+    }
+    .banar-box2 {
+        padding-bottom: 2vw;
+        width: 74vw;
+        /* font-size: 1vw; */
+        /* border: 1px solid black; */
+    }
+    .box-head1{
+        font-size: 8vw;
+    }
+    .box-head2{
+        font-size: 17vw;
+    }
+    .banar-box1{
+        align-items: center;
+        justify-content: center;
+        width: 76vw;
+        gap: 2vw;
+        background: url('../images/Group_14.png');
+        background-size: cover;
+        padding: 2vw .5vw;
+    }
+    a{
+        font-size: .2vw;
+    }
+    .nav-menu{
+        justify-content: center;
+        align-items: center;
+    }
+    .descirption{
+        font-size: .2vw;
+    }
+
+    .funny-container{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    .play{
+        flex-direction: column;
+        margin: 0;
+    }
+    .play-box{
+        width: 74vw;
+        margin: 1vw 13vw;
+        /* border: 1px solid black;padding: 0; */
+    }
+    .content{
+        width: 74vw;
+    text-align: center;
+    padding: 0;
+    /* border: 1px solid black; */
+    margin: 0vw;
+    }
+    .grid{
+        display: none;
+    }
+    .optimal{
+        padding: 2vw 13vw;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4vw;
+    }
+    .gird-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22vw;
+        height: 4vw;
+        padding: .4vw;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* border: 1px solid black; */
+    }
+    .footer2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-content: center;
+
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer1{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        gap: 10vw;
+    }
+    .special {
+        position: relative;
+        width: 26vw;
+        right: 9vw;
+        bottom: 25vw;
+    }
 }

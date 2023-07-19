@@ -190,16 +190,13 @@ background-clip: text;
     flex: 1;
 }
 .content{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 280px;
     text-align: right;
     margin: 10vw 2vw 10vw 10vw; 
     
 }
-.help{
-    
-    /* width: 50%; */
-}
+
 .funny-title1{
      color:#F948B2;
 
@@ -210,7 +207,4 @@ font-weight: 700;
 }
 .play-box img{
     width: 100%;
-}
-.play-box{
-    
 }
